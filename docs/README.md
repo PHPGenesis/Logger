@@ -1,3 +1,7 @@
+---
+title: Overview
+---
+
 # PHPGenesis/Logger
 
 The PHPGenesis Logger is an abstraction layer on top of the Laravel Log Facade and Monolog.
