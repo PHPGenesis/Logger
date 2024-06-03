@@ -83,11 +83,11 @@ class ExceptionLogger
     private static function buildContext(Exception $exception, array $context = []): array
     {
         return array_merge([
-            'exception' => $exception,
             'exception.message' => $exception->getMessage(),
             'exception.code' => $exception->getCode(),
             'exception.file' => $exception->getFile(),
             'exception.line' => $exception->getLine(),
+            'exception.trace' => $exception->getTraceAsString(),
         ], $context);
     }
 }
